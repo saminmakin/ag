@@ -1,0 +1,1257 @@
+/**
+ * @link              https://almas.gold
+ * @since             1.0.0
+ * @plugin name       almas gold 
+ * @package           almas-gold admin extra styles file
+*/
+
+a {
+    outline: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+a:hover {
+    font-weight: 700 !important;
+}
+
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 8px 19px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.almas_gold_admin textarea {
+    border-radius: 2px !important;
+    min-height: 80px !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    background-color: #f6f6f6 !important;
+    color: #2c3338 !important;
+    resize: none;
+    padding: 10px;
+    text-align: center;
+}
+
+#almas_gold_admin_container_box .delete_order_popup,
+#almas_gold_admin_container_box .delete_order_popup_all,
+#almas_gold_admin_container_box .submit_delivery_to_account_popup,
+#almas_gold_admin_container_box .submit_deposit_to_account_popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: white;
+    z-index: 1000;
+    border-radius: 7px;
+    box-shadow: 0 0 47px rgb(0 0 0 / 14%);
+}
+
+#almas_gold_admin_container_box .delete_order_close_popup {
+    width: 60px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 37px;
+    border-radius: 3px;
+
+}
+
+#almas_gold_admin_container_box .delete_order_close_popup:hover {
+    background-color: #f1a3a3;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+}
+
+
+#almas_gold_admin_container_box input[type="submit"],
+#almas_gold_admin_container_box button {
+    background-color: #3498db;
+    color: #fff;
+    border: 0;
+    padding: 5px 15px;
+    font-size: 14px;
+    min-height: 40px;
+    transition: all 0.3s, color 0.3s;
+    border-radius: 3px;
+    line-height: 28px;
+}
+
+#almas_gold_admin_container_box input[type="submit"]:hover,
+#almas_gold_admin_container_box button:hover,
+#almas_gold_admin_container_box .ag_pay_button:hover {
+    background-color: #2980b9;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+#almas_gold_admin_container_box .list_head {
+    background-color: #e9e8e8;
+    padding: 13px 25px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#almas_gold_admin_container_box h4 {
+    font-size: 15px !important;
+    font-weight: 700;
+    margin: 0;
+}
+
+#almas_gold_admin_container_box td {
+    font-size: 13px;
+    line-height: 2.8em !important;
+}
+
+#almas_gold_admin_container_box table {
+    border: 0 !important
+}
+
+#almas_gold_admin_container_box thead td {
+    line-height: 2em !important;
+    font-size: 13px !important;
+    font-weight: 700;
+    background-color: #c7e4e5;
+}
+
+#almas_gold_admin_container_box .show_detailes {
+    color: #b9b9b9;
+    font-size: 12px;
+}
+
+#almas_gold_admin_container_box .show_detailes:hover {
+    cursor: pointer;
+    color: #222222;
+}
+
+#almas_gold_admin_container_box .submit_delete_order {
+    color: #b9b9b9;
+    font-size: 12px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#almas_gold_admin_container_box .submit_delete_order:hover {
+    cursor: pointer;
+    color: #222222;
+}
+
+#almas_gold_admin_container_box .submit_edit_delivery_status {
+    color: #ffffff;
+    font-size: 12px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: #6d7fc7;
+    transition: background-color 0.1s;
+    border-radius: 3px;
+    margin-left: 35px;
+}
+
+#almas_gold_admin_container_box .submit_edit_delivery_status a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+#almas_gold_admin_container_box .submit_edit_delivery_status:hover {
+    cursor: pointer;
+    background-color: #b9c1e0;
+    transition: background-color 0.1s;
+}
+
+#almas_gold_admin_container_box .submit_delete_all_expired_orders {
+    color: #ffffff;
+    font-size: 12px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: #8793c5;
+    transition: background-color 0.1s;
+    border-radius: 3px;
+}
+
+#almas_gold_admin_container_box .submit_delete_all_expired_orders:hover {
+    cursor: pointer;
+    background-color: #b9c1e0;
+    transition: background-color 0.1s;
+}
+
+
+
+#almas_gold_admin_box {
+    display: flex;
+}
+
+#almas_gold_admin_box h4 {
+    font-size: 14px !important;
+    margin: 0 0 26px 0;
+    font-weight: 300;
+    background-color: #e9e8e8;
+    padding: 13px 25px;
+    border-radius: 2px;
+    margin-bottom: 35px;
+}
+
+#almas_gold_admin_box label {
+    font-size: 13px;
+    margin-left: 10px
+}
+
+#almas_gold_admin_box span {
+    margin-right: 10px !important;
+    font-size: 12px;
+}
+
+#almas_gold_admin_box .valux {
+    width: 75px !important;
+    text-align: center !important;
+    direction: ltr !important;
+    min-height: 39px !important;
+    border: 1px solid #dbd7d7 !important;
+    border-radius: 2px !important;
+    font-weight: 700 !important;
+    margin: 12px 0 25px 0 !important;
+    background-color: #f3f3f3 !important;
+}
+
+#almas_gold_admin_box .valux:focus {
+    border: 1px solid #afadad !important;
+    background-color: #efefef !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+#almas_gold_admin_box .amiux {
+    width: 110px !important;
+    text-align: center !important;
+    direction: ltr !important;
+    min-height: 42px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 2px !important;
+    font-weight: 700 !important;
+    margin: 12px 0 25px 0 !important;
+}
+
+#almas_gold_admin_box input[type="number"]::-webkit-outer-spin-button,
+#almas_gold_admin_box input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#almas_gold_admin_box input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+#almas_gold_core_settings {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#almas_gold_core_settings .header_box {
+    display: flex;
+    background-color: #e4e4e4;
+    margin-top: 35px;
+    border-radius: 4px;
+    padding: 22px 33px;
+    justify-content: space-between;
+}
+
+#almas_gold_core_settings .save_button {
+    background-color: #93c989;
+    border: none;
+    cursor: pointer;
+    padding: 4px 15px;
+    transition: 0.3s;
+    font-size: 0.80rem;
+    color: #000;
+    border-radius: 3px;
+}
+
+#almas_gold_core_settings .save_button:hover {
+    background-color: #87b180;
+    border: none;
+    cursor: pointer;
+    padding: 4px 15px;
+    transition: 0.3s;
+    font-size: 0.80rem;
+    color: #000;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+#almas_gold_core_settings .tab a {
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 13px 9px 13px;
+    transition: 0.3s;
+    font-size: 0.85rem;
+    color: #000;
+    border-radius: 3px;
+    margin-left: 8px;
+}
+
+#almas_gold_core_settings .tab a:hover {
+    background-color: #ddd;
+    font-weight: 700;
+}
+
+#almas_gold_core_settings .tab a.active {
+    background-color: #ccc;
+    font-weight: 700;
+}
+
+#almas_gold_core_settings .tabcontent {
+    display: none;
+    padding: 44px 40px 40px 40px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+#almas_gold_core_settings .tabcontent.active {
+    display: block;
+}
+
+.copy-text {
+    cursor: pointer;
+}
+
+#copy-message {
+    background-color: #c7c7c7;
+    color: #000000;
+    padding: 9px 9px !important;
+    border-radius: 4px;
+    position: absolute;
+    top: -9px;
+    right: 180px;
+    font-size: 12px;
+    font-weight: 600;
+    width: max-content;
+    height: 18px;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+#copy-message.show {
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.almas-gold-widget-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px !important;
+    line-height: 22px;
+}
+
+.almas-gold-widget-section {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.almas-gold-widget-section h4 {
+    font-size: 13px !important;
+}
+
+.almas-gold-balance-info {
+    margin-top: 10px;
+}
+
+.almas-gold-empty {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/*************************************************************/
+
+.admin_order_details_box {
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.admin_order_details_box .info-box {
+    margin: 20px auto;
+    width: 700px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.admin_order_details_box uid {
+    font-family: "uid" !important;
+    font-size: 14px;
+}
+
+.admin_order_details_box #shop_gold_weight,
+.admin_order_details_box #sale_gold_weight,
+.admin_order_details_box #delivery_gold_weight {
+    width: 100px;
+    text-align: center;
+    direction: ltr;
+    position: relative;
+}
+
+.admin_order_details_box #shop_initial_price_display,
+.admin_order_details_box #deposit_amount {
+    width: 150px;
+    text-align: center;
+    direction: ltr
+}
+
+.admin_order_details_box .lh {
+    line-height: 30px !important;
+}
+
+.admin_order_details_box h4 {
+    margin: 0 0 20px 0;
+    font-size: 17px;
+}
+
+.admin_order_details_box h3 {
+    margin: 0 0 20px 0;
+    font-size: 17px;
+}
+
+.admin_order_details_box label {
+    font-size: 13px;
+    margin-left: 5px
+}
+
+.admin_order_details_box span {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+}
+
+.admin_order_details_box .success {
+    color: rgb(19, 126, 60);
+}
+
+.admin_order_details_box input[type="submit"],
+.admin_order_details_box button {
+    background-color: #3498db;
+    color: #fff;
+    border: 0;
+    padding: 5px 15px;
+    font-size: 14px;
+    transition: all 0.3s, color 0.3s;
+    border-radius: 3px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.admin_order_details_box .ag_pay_button {
+    background-color: #3498db;
+    color: #fff;
+    border: 0;
+    padding: 5px 15px;
+    font-size: 14px;
+    transition: all 0.3s, color 0.3s;
+    border-radius: 3px;
+    line-height: 28px !important;
+    font-weight: 700;
+    height: 28px;
+}
+
+.admin_order_details_box input[type="submit"]:hover,
+.admin_order_details_box button:hover,
+.admin_order_details_box .ag_pay_button:hover {
+    background-color: #2980b9;
+    color: #fff;
+    cursor: pointer;
+}
+
+.admin_order_details_box input[type="checkbox"] {
+    cursor: pointer;
+}
+
+
+
+.admin_order_details_box input[type="submit"]:focus-visible,
+.admin_order_details_box input[type="submit"]:focus,
+.admin_order_details_box button:focus-visible,
+.admin_order_details_box button:focus {
+    background-color: #1470ad;
+    outline: none !important;
+}
+
+.admin_order_details_box input[type="submit"]:disabled,
+.admin_order_details_box button:disabled {
+    background-color: #c7c7c7;
+    color: #ffffff;
+    cursor: default !important;
+}
+
+.admin_order_details_box textarea {
+    text-align: right !important;
+    padding: 10px 13px;
+    font-size: 13px;
+    border: 1px solid #ebebeb;
+    transition: border-color 0.3s;
+    border-radius: 2px;
+    direction: rtl;
+    height: 75px;
+    resize: none;
+}
+
+.admin_order_details_box textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+.admin_order_details_box textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.admin_order_details_box textarea::-webkit-scrollbar-thumb {
+    background: #cacadd;
+}
+
+.admin_order_details_box textarea::-webkit-scrollbar-thumb:hover {
+    background: #a6a6e6;
+    cursor: pointer;
+}
+
+.admin_order_details_box textarea:hover {
+    border-color: #d0d5d8;
+}
+
+.admin_order_details_box textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #e3e3e3;
+}
+
+.admin_order_details_box textarea:focus::placeholder {
+    color: rgb(63, 63, 63);
+}
+
+.admin_order_details_box textarea::placeholder {
+    color: rgb(173, 173, 173);
+    font-size: 11px;
+}
+
+.admin_order_details_box input[type="number"]::-webkit-outer-spin-button,
+.admin_order_details_box input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.admin_order_details_box input[type="number"],
+#order_search_box input[type="number"],
+#order_search_box input[type="text"],
+.admin_order_details_box input[type="text"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+    border-radius: 3px;
+    margin-left: 10px;
+    min-height: 40px;
+    font-weight: 700;
+}
+
+.admin_order_details_box input[type="number"]:hover,
+.admin_order_details_box input[type="text"]:hover,
+.admin_order_details_box select:hover {
+    border-color: #bdc3c7;
+}
+
+.admin_order_details_box input[type="number"]:focus,
+.admin_order_details_box input[type="text"]:focus,
+.admin_order_details_box select:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #bbbbbb;
+    background-color: #f9f9f9;
+}
+
+.admin_order_details_box input:focus::placeholder {
+    color: rgb(63, 63, 63);
+}
+
+.admin_order_details_box input::placeholder {
+    color: rgb(173, 173, 173);
+    font-size: 11px;
+}
+
+.admin_order_details_box select {
+    width: 160px;
+    background-color: #f1f1f1;
+    border: thin solid rgb(235 233 233);
+    border-radius: 2px;
+    display: inline-block;
+    font: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin: 0;
+    min-height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.admin_order_details_box select.classic {
+    background-image:
+        linear-gradient(45deg, transparent 50%, blue 50%),
+        linear-gradient(135deg, blue 50%, transparent 50%),
+        linear-gradient(to right, skyblue, skyblue);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    background-repeat: no-repeat;
+}
+
+.admin_order_details_box select.classic:focus {
+    background-image:
+        linear-gradient(45deg, white 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        linear-gradient(to right, gray, gray);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+}
+
+.admin_order_details_box select.round {
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        radial-gradient(#ddd 70%, transparent 72%);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - .5em) .5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1.5em 1.5em;
+    background-repeat: no-repeat;
+}
+
+.admin_order_details_box select.round:focus {
+    background-image:
+        linear-gradient(45deg, white 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        radial-gradient(gray 70%, transparent 72%);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - .5em) .5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1.5em 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+}
+
+.admin_order_details_box select.minimal {
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+.admin_order_details_box select.minimal:focus {
+    background-image:
+        linear-gradient(45deg, green 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, green 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: rgb(233, 233, 233);
+    outline: 0;
+}
+
+.admin_order_details_box select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.admin_order_details_box vals {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.admin_order_details_box valsGoldWeight {
+    background-color: #ffd84d;
+    padding: 1px 7px 1px 5px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.admin_order_details_box valsOrderPrice {
+    background-color: #4ce7ac;
+    padding: 1px 7px 1px 5px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.admin_order_details_box valsFinalPrice {
+    background-color: #46d69f;
+    padding: 1px 7px 1px 5px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.admin_order_details_box valsOrderPricePayed {
+    background-color: #bef5e0;
+    padding: 1px 7px 1px 5px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.admin_order_details_box perfix {
+    font-size: 13px;
+    margin-left: 6px
+}
+
+.admin_order_details_box perfix {
+    font-size: 13px;
+    margin-left: 6px
+}
+
+.admin_order_details_box suffix {
+    font-size: 13px;
+    margin-right: 6px
+}
+
+.admin_order_details_box .valsGoldPrice {
+    color: #757575;
+    border-right: 1px solid #e7e7e7;
+    padding-right: 20.5%;
+}
+
+.admin_order_details_box .qrcode {
+    position: relative;
+    width: 100px;
+}
+
+.admin_order_details_box .qrcode img {
+    width: 75px !important;
+    height: 75px !important;
+    border: 0 !important;
+    display: block;
+    outline: none !important;
+}
+
+.admin_order_details_box .qrc_placeholder {
+    width: 75px !important;
+    height: 75px !important;
+    background-color: #ffffff;
+    display: none;
+    border: 1px solid #ebe9e9;
+    text-align: center;
+    padding-top: 25%;
+    color: #c9c4c4;
+}
+
+.admin_order_details_box .checkbox_cont {
+    display: block;
+    position: relative;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.admin_order_details_box .checkbox_cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.admin_order_details_box .checkmark {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #9ebdf3;
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+.admin_order_details_box .checkmark:hover {
+    transition: background-color 0.3s;
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+.admin_order_details_box .disabled_checkbox {
+    pointer-events: none !important;
+    cursor: default !important;
+    background-color: #f3f2f2 !important;
+}
+
+.admin_order_details_box .disabled_text {
+    color: #a9a9a9 !important;
+}
+
+.admin_order_details_box .disabled_checkbox:hover {
+    background-color: #e7e7e7 !important;
+}
+
+.admin_order_details_box .checkbox_cont input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.admin_order_details_box .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.admin_order_details_box .checkbox_cont input:checked~.checkmark:after {
+    display: block;
+}
+
+.admin_order_details_box .checkbox_cont .checkmark:after {
+    right: 8px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.admin_order_details_box .hr {
+    margin: 15px 0 !important;
+    border-top: 1px solid #dddcdc;
+    height: 1px;
+}
+
+.admin_order_details_box .hrl {
+    margin: 15px 0 !important;
+    border-top: 1px solid #dbdbdb;
+    height: 1px;
+}
+
+.admin_order_details_box .hrk {
+    margin: 30px 0 !important;
+    border-top: 1px solid #d3d3d3;
+    height: 1px;
+}
+
+.admin_order_details_box .hrh {
+    margin: 15px 0 35px 0 !important;
+    border-top: 1px solid #dbd7d7;
+    height: 1px;
+}
+
+.admin_order_details_box .callback_order_description {
+    background-color: #f9f9f9;
+    font-size: 12px;
+    padding: 17px;
+    margin-top: 7px;
+    border-radius: 4px;
+    line-height: 25px;
+}
+
+.admin_order_details_box .payment_popup {
+    display: none;
+    position: fixed;
+    /* width: 55%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: white;
+    z-index: 1000;
+    border-radius: 7px;
+    box-shadow: 0 0 47px rgb(0 0 0 / 14%);
+}
+
+.admin_order_details_box .payment_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*
+    background-color: rgba(255, 255, 255, 0.753);
+    */
+    z-index: 999;
+}
+
+.admin_order_details_box .close_popup {
+    background-color: #f19090;
+    width: 60px;
+    text-align: center;
+    margin-right: 40px
+}
+
+.admin_order_details_box .close_popup:hover {
+    background-color: #d63939;
+    cursor: pointer;
+}
+
+.admin_order_details_box .flex {
+    display: flex;
+}
+
+.admin_order_details_box .flex-space-between {
+    display: flex;
+    justify-content: space-between
+}
+
+.admin_order_details_box .flex-space-between-align-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin_order_details_box .user_avatar {
+    margin-left: 15px;
+    margin-top: 6px;
+    width: 20%;
+}
+
+.admin_order_details_box .user_avatar img {
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 100px !important;
+    background-color: #b8b7b7;
+}
+
+.admin_order_details_box .small {
+    font-size: 11px;
+    font-weight: 700;
+    color: #424242
+}
+
+.admin_order_details_box .muted {
+    font-size: 13px;
+    margin: 0;
+    color: #acacac;
+}
+
+.admin_order_details_box .nullwallet {
+    font-size: 13px;
+    margin: 0;
+    color: #acacac;
+    font-weight: normal !important;
+}
+
+.admin_order_details_box .payment_box {
+    background-color: #f5f5f5;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 2px;
+    align-content: center;
+    border: 1px solid #e9e9e9;
+}
+
+.admin_order_details_box #pay_remaining_price_online_box {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 4px
+}
+
+.admin_order_details_box .ag_payment_wallet_box {
+    padding: 12px 20px 14px 20px;
+    border: 1px solid #d2daeb;
+    border-radius: 4px;
+    background-color: #fbfbfb;
+}
+
+.order-search-results {
+    width: 100% !important;
+}
+
+.order-search-results-order-header {
+    display: flex;
+    background-color: #87b0cc;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.printable-area,
+.printable-area * {
+    visibility: visible;
+}
+
+.printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#print_order {
+    text-decoration: none !important;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px
+}
+
+#print_order:hover {
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+#order_search_box {
+    position: fixed;
+    z-index: 5;
+    background-color: #e5e5e5;
+    width: 100%;
+    height: auto;
+    margin-right: -20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+#order_search_results_box {
+    z-index: 5;
+    width: 100%;
+    height: auto;
+    margin-right: -20px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 110px
+}
+
+#order_search_box input[type="number"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+    border-radius: 3px;
+    margin-left: 10px;
+    min-height: 40px;
+    text-align: center;
+    width: 100px;
+}
+
+#order_search_box input[type="number"]::placeholder {
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-size: 13px;
+    font-weight: 100 !important;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.pagination a,
+.pagination span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid rgb(212, 222, 226);
+    text-decoration: none;
+    color: #0073aa;
+    border-radius: 3px;
+    line-height: 21px;
+}
+
+.pagination a:hover {
+    background-color: #aed1e2;
+    border: 1px solid #aed1e2;
+    color: #2c2c2c;
+}
+
+.pagination .current {
+    background-color: #42b0e5;
+    color: #fff;
+    border-color: #42b0e5;
+    border-radius: 3px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+#edit_delivery_status_search_box {
+    background-color: #e5e5e5;
+    height: auto;
+    margin-right: -20px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+#edit_delivery_status_search_box input[type="text"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+    border-radius: 3px;
+    margin-left: 10px;
+    min-height: 40px;
+    font-weight: 700;
+}
+
+#edit_delivery_status_search_box input[type="number"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+    border-radius: 3px;
+    margin-left: 10px;
+    text-align: center;
+    width: 90px;
+}
+
+#edit_delivery_status_search_box input[type="number"]::placeholder {
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-size: 13px;
+    font-weight: 100 !important;
+}
+
+
+
+.admin_edit_delivery_status_box {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+.admin_edit_delivery_status_box uid {
+    font-family: "uid" !important;
+    font-size: 14px;
+}
+
+.new_gold_weight_submit_box {
+    padding: 30px;
+    background-color: #e7e7e7;
+    width: 600px;
+    border-radius: 8px 8px 0 0;
+    margin: 0 auto !important;
+}
+
+.payment_submit_box {
+    padding: 30px;
+    background-color: #e1dddd;
+    width: 600px;
+    border-radius: 0 0 8px 8px;
+    margin: 0 auto !important;
+}
+
+.delivery_bill_box {
+    padding: 30px;
+    background-color: #e7e7e7;
+    border-radius: 8px;
+    width: 600px;
+    margin: 25px auto !important;
+}
+
+#delivery_gold_weight_input,
+#CGT_delivery_gold_weight_input {
+    width: 80px;
+    height: 40px !important;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    direction: ltr !important;
+    text-align: center
+}
+
+#gold_weight_diff_value,
+#CGT_gold_weight_diff_value {
+    color: #181818;
+    margin-right: 15px;
+    padding: 3px 8px 2px 8px;
+    border-radius: 3px;
+    font-size: 95%;
+}
+
+.disabled_checkbox_x {
+    pointer-events: none !important;
+    cursor: default !important;
+    background-color: #c3c3c3 !important;
+}
+
+.disabled_text_x {
+    color: #b9b9b9 !important;
+}

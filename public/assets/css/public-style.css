@@ -1,0 +1,1884 @@
+/**
+ * @link              https://almas.gold
+ * @since             1.0.0
+ * @plugin name       almas gold 
+ * @package           almas-gold public styles
+*/
+
+h1.entry-title {
+    display: none !important;
+}
+
+.action_controls {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.walle-recharge-deposit {
+    width: 100%;
+}
+
+.billing_results {
+    width: 700px;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+.biliing-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 640px;
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.billing-icon-title, .biliing-form uid, .biliing-form .massage {
+    animation: translate-y-100 300ms cubic-bezier(0.165, 0.84, 0.44, 1.2) forwards;
+    opacity: 0;
+    animation-delay: 1250ms;
+}
+
+.billing-icon-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 24px;
+    animation-delay: 1100ms;
+}
+
+.billing-icon-title i {
+    font-size: 18px;
+}
+
+.biliing-form uid {
+    margin-top: 0;
+    font-size: 13px;
+    color: #60655f;
+}
+
+.biliing-form:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09), 0 2px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 25px;
+    clip-path: inset(0px -4px 0px -4px);
+}
+
+.biliing-form:last-of-type:before, .biliing-form-last:before {
+    clip-path: inset(0px -4px -4px -4px);
+}
+
+.biliing-form:first-of-type {
+    animation: translate-y-100 500ms 1000ms cubic-bezier(0.19, 1, 0.22, 1.2) forwards;
+    opacity: 0;
+    z-index: 0;
+}
+
+.biliing-form .biliing-icon {
+    width: 64px;
+    height: 64px;
+    border: 2px solid #ffffff;
+    border-radius: 9999px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.06) inset;
+    display: grid;
+    place-content: center;
+    margin-bottom: 1rem;
+}
+
+.biliing-form .biliing-icon:before {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.03);
+    font-family: "arial";
+    font-size: 32px;
+    color: #46a758;
+}
+
+.biliing-form-list-li i{
+    font-size: 18px;
+}
+
+.biliing-form:not(:first-of-type) {
+    transform-origin: top;
+    animation: unfold 500ms 1700ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    -webkit-transform: perspective(500px) rotateX(-0.25turn);
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.biliing-form:nth-of-type(3) {
+    animation-delay: 1950ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 1.4);
+    z-index: 2;
+}
+
+.biliing-form:nth-of-type(4) {
+    animation-delay: 2200ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 1.4);
+    z-index: 2;
+}
+
+.biliing-form:nth-of-type(5) {
+    animation-delay: 2450ms;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 1.4);
+    z-index: 2;
+}
+
+.biliing-form:not(:first-of-type):after {
+    position: absolute;
+    top: -0.5px;
+    left: 4%;
+    content: "";
+    width: 92%;
+    height: 1px;
+    border-top: 1px #d7dad7 dashed;
+}
+
+.biliing-form-list-ul, .cta-row-pay, .biliing-form-list-pay {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.biliing-form-list-ul .biliing-form-list-li,
+.cta-row-pay .biliing-form-list-li,
+.payment_popup .biliing-form-list-li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.biliing-form-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.biliing-form-list-type-li {
+    display: flex;
+}
+
+.biliing-form-list-type-fee-li {
+    display: flex;
+    align-items: center;
+}
+
+.biliing-form-list-pay {
+    flex-direction: row !important;
+}
+
+#pay_all_final_price_online_box .biliing-form-list-pay .biliing-form-list-li-des,
+#pay_remaining_price_online_box .biliing-form-list-pay .biliing-form-list-li-des,
+#pay_all_price_from_wallet_box .biliing-form-list-pay .biliing-form-list-li-des,
+#delivery_pay_by_wallet_box .biliing-form-list-pay .biliing-form-list-li-des,
+#delivery_pay_all_online_box .biliing-form-list-pay .biliing-form-list-li,
+#online_payment_popup .biliing-form-list-pay .biliing-form-list-li,
+#all_wallet_payment_popup .biliing-form-list-pay .biliing-form-list-li,
+#pay_remaining_online_payment_popup .biliing-form-list-pay .biliing-form-list-li,
+#ag_pay_all_price_online_popup .biliing-form-list-pay .biliing-form-list-li,
+#recharge_online_popup .biliing-form-list-pay .biliing-form-list-li,
+#deposit_online_popup .biliing-form-list-pay .biliing-form-list-li,
+#pay_remaining_online_popup .biliing-form-list-pay .biliing-form-list-li {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#pay_all_final_price_online_box .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#pay_remaining_price_online_box .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#pay_all_price_from_wallet_box .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#delivery_pay_by_wallet_box .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#delivery_pay_all_online_box .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#online_payment_popup .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#all_wallet_payment_popup .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#pay_remaining_online_payment_popup .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#ag_pay_all_price_online_popup .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#recharge_online_popup .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#deposit_online_popup .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2),
+#pay_remaining_online_popup .biliing-form-list-pay .biliing-form-list-li:nth-of-type(2) {
+    direction: ltr !important;
+}
+
+.ag_payment_wallet_box .biliing-form-list-pay {
+    display: grid;
+}
+
+.biliing-form-list-ul .biliing-form-list-li span,
+.cta-row-pay .biliing-form-list-li span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.biliing-form-list-ul .biliing-form-list-li label,
+.cta-row-pay .biliing-form-list-li label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #757575;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.cta-row-pay {
+    display: flow;
+    width: 100%;
+    animation: translate-y-100 600ms 2200ms cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    opacity: 0;
+}
+
+.biliing-form-list-li suffix {
+    margin-right: 2px !important;
+}
+
+.qrcode {
+    direction: ltr;
+}
+
+@keyframes translate-y-100 {
+    0% {
+        transform: scale(0.9) translateY(0.5rem);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes unfold {
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.almas-gold-bill-list-button a,
+.almas-gold-bill-dashboard-button a {
+    justify-content: center;
+    display: flex;
+    padding: 6px 8px;
+    transition: all 0.3s, background-color 0.3s;
+}
+
+.almas-gold-bill-list-button a {
+    background-color: #e6f4f1;
+    border-radius: 6px;
+}
+
+.almas-gold-bill-dashboard-button a {
+    background-color: #E1D6E0;
+    border-radius: 6px;
+}
+
+.almas-gold-bill-dashboard-button a:hover {
+    background-color: #12373F;
+}
+
+.almas-gold-bill-list-button a:hover {
+    background-color: #0D9277;
+}
+
+.almas-gold-bill-list-button span,
+.almas-gold-bill-dashboard-button span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.almas-gold-bill-list-button span {
+    color: #0D9277;
+}
+
+.almas-gold-bill-dashboard-button span {
+    color: #12373F;
+}
+
+.almas-gold-bill-list-button a:hover span,
+.almas-gold-bill-dashboard-button a:hover span {
+    color: #ffffff;
+}
+
+.action_controls uid,
+.billing_results uid {
+    font-family: "uid" !important;
+    font-size: 14px;
+}
+
+#almas_gold_customer_container_box .list_body {
+    width: 100% !important;
+    overflow: scroll;
+    border-radius: 15px;
+    padding: 0px !important;
+    scrollbar-width: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.customer_list_table td, .customer_list_table th {
+    white-space: nowrap;
+}
+.customer_list_table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    table-layout: auto;
+}
+
+.customer_list_table thead {
+    background-color: #12373F;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.customer_list_table thead th {
+    padding: 16px;
+    text-align: center;
+}
+
+.customer_list_table tbody {
+    border: 1px solid #e3e3e3;
+}
+
+.customer_list_table tbody td {
+    padding: 16px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.customer_list_table .customer_list_table_row:nth-child(even) {
+    background: rgba(0, 0, 0, .03);
+}
+
+.list_head h4 {
+    color: #12373F;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#ag_user_safe_balance_info label, #ag_user_wallet_balance_info label {
+    display: block;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+#ag_user_safe_balance_info span, #ag_user_safe_balance_info suffix,
+#ag_user_wallet_balance_info span, #ag_user_wallet_balance_info suffix {
+    margin-right: 2px !important;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    padding: 0 !important;
+}
+
+#ag_user_safe_balance_info span, #ag_user_safe_balance_info suffix {
+    color: #12373F !important;
+}
+
+#ag_user_wallet_balance_info span, #ag_user_wallet_balance_info suffix {
+    color: #12373F !important;
+}
+
+#almas_gold_customer_container_box .show_detailes {
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    background-color: #e1d6e0;
+    color: #12373F;
+}
+
+#almas_gold_customer_container_box .show_detailes:hover {
+    cursor: pointer;
+}
+
+.almas_gold_customer_weight, .vals-gold-weight {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: #B7C5BF;
+    color: #12373F !important;
+}
+
+.vals-wallet-balance {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: #E1D6E0;
+    color: #12373F !important;
+}
+
+.vals-Order-Price, .success {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: #F0E9DD;
+    color: #7E623F;
+}
+
+.failed {
+    padding: 2px 8px;
+    border-radius: 6px;
+    background-color: #FBE7EB;
+    color: #DC143C;
+}
+
+#almas_gold_customer_container_box table {
+    width: fit-content;
+    overflow: scroll;
+    max-width: 100%;
+    background: #fff;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0 10px;
+}
+
+#almas_gold_customer_container_box table > thead > tr {
+    border: 1px solid #e3e3e3;
+    border-radius: 12px;
+}
+
+#almas_gold_customer_container_box td {
+    line-height: 36px;
+    margin: 40px;
+    padding: 15px;
+}
+
+.action_controls #shop_gold_weight,
+.billing_results #shop_gold_weight,
+.action_controls #sale_gold_weight,
+.billing_results #sale_gold_weight,
+.action_controls #delivery_gold_weight,
+.billing_results #delivery_gold_weight,
+.action_controls #shop_initial_price_display,
+.billing_results #shop_initial_price_display,
+.action_controls #sale_initial_price_display,
+.billing_results #sale_initial_price_display,
+.action_controls #delivery_initial_price_display,
+.billing_results #delivery_initial_price_display,
+.action_controls #recharge_amount,
+.billing_results #recharge_amount,
+.action_controls #deposit_amount,
+.billing_results #deposit_amount {
+    width: 100%;
+    text-align: center;
+    direction: ltr
+}
+
+.billing_results .lh,
+.action_controls .lh {
+    line-height: 30px !important;
+}
+
+.billing_results h4,
+.action_controls h4 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.billing_results h3,
+.action_controls h3 {
+    margin: 0 0 20px 0;
+    font-size: 17px;
+}
+
+.billing_results label,
+.action_controls label {
+    font-size: 13px;
+    margin-left: 5px
+}
+
+.billing_results span,
+.action_controls span {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+}
+
+.billing_results .success,
+.action_controls .success {
+    color: #0D9277;
+    background-color: #e6f4f1;
+}
+
+.billing_results .failed,
+.action_controls .failed {
+    color: #FBE7EB;
+    background-color: #DC143C;
+}
+
+.biliing-form-button-gold {
+    background-color: #F0E9DD !important;
+    color: #7E623F !important;
+}
+
+.action_controls input[type="submit"],
+.billing_results input[type="submit"],
+.action_controls button,
+.billing_results button {
+    border: 0;
+    padding: 5px 15px;
+    min-height: 40px;
+    transition: all 0.3s, color 0.3s;
+    border-radius: 8px;
+    width: 100%;
+    justify-content: center !important;
+}
+
+.action_controls .ag_pay_button,
+.billing_results .ag_pay_button {
+    border: 0;
+    padding: 5px 15px;
+    min-height: 40px;
+    transition: all 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.action_controls input[type="submit"],
+.billing_results input[type="submit"],
+.billing_results button[type="submit"],
+.action_controls .ag_pay_button,
+.billing_results .ag_pay_button {
+    background-color: #B7C5BF;
+    color: #12373F !important;
+}
+
+.action_controls input[type="submit"]:hover,
+.billing_results input[type="submit"]:hover,
+.action_controls button:hover,
+.billing_results button:hover,
+.action_controls .ag_pay_button:hover,
+.billing_results .ag_pay_button:hover {
+    background-color: #12373F;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.action_controls input[type="checkbox"],
+.billing_results input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.action_controls input[type="submit"]:focus-visible,
+.billing_results input[type="submit"]:focus-visible,
+.action_controls input[type="submit"]:focus,
+.billing_results input[type="submit"]:focus,
+.action_controls button:focus-visible,
+.billing_results button:focus-visible,
+.action_controls button:focus,
+.billing_results button:focus {
+    outline: none !important;
+}
+
+.action_controls input[type="submit"]:disabled,
+.billing_results input[type="submit"]:disabled,
+.billing_results button:disabled {
+    background-color: #c7c7c7 !important;
+    color: #ffffff !important;
+    cursor: default !important;
+}
+
+.billing_results textarea,
+.action_controls textarea {
+    text-align: right !important;
+    padding: 10px 13px;
+    font-size: 13px;
+    font-family: 'prk-font';
+    border: 1px solid #ebebeb;
+    transition: border-color 0.3s;
+    border-radius: 8px;
+    direction: rtl;
+    height: 75px;
+    resize: none;
+}
+
+.billing_results textarea::-webkit-scrollbar,
+.action_controls textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+.billing_results textarea::-webkit-scrollbar-track,
+.action_controls textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.billing_results textarea::-webkit-scrollbar-thumb,
+.action_controls textarea::-webkit-scrollbar-thumb {
+    background: #cacadd;
+}
+
+.billing_results textarea::-webkit-scrollbar-thumb:hover,
+.action_controls textarea::-webkit-scrollbar-thumb:hover {
+    background: #a6a6e6;
+    cursor: pointer;
+}
+
+.billing_results textarea:hover,
+.action_controls textarea:hover {
+    border-color: #d0d5d8;
+}
+
+.billing_results textarea:focus,
+.action_controls textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #e3e3e3;
+}
+
+.billing_results textarea:focus::placeholder,
+.action_controls textarea:focus::placeholder {
+    color: rgb(63, 63, 63);
+}
+
+.billing_results textarea::placeholder,
+.action_controls textarea::placeholder {
+    color: rgb(173, 173, 173);
+    font-size: 11px;
+}
+
+.billing_results input[type="number"]::-webkit-outer-spin-button,
+.action_controls input[type="number"]::-webkit-outer-spin-button,
+.billing_results input[type="number"]::-webkit-inner-spin-button,
+.action_controls input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.billing_results input[type="number"],
+.action_controls input[type="number"],
+.billing_results input[type="text"],
+.action_controls input[type="text"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+    border-radius: 8px;
+    margin-left: 10px;
+    min-height: 40px;
+    font-weight: 700;
+}
+
+.billing_results input[type="number"]:hover,
+.action_controls input[type="number"]:hover,
+.billing_results input[type="text"]:hover,
+.action_controls input[type="text"]:hover,
+.billing_results select:hover,
+.action_controls select:hover {
+    border-color: #bdc3c7;
+}
+
+.billing_results input[type="number"]:focus,
+.action_controls input[type="number"]:focus,
+.billing_results input[type="text"]:focus,
+.action_controls input[type="text"]:focus,
+.billing_results select:focus,
+.action_controls select:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #bbbbbb;
+}
+
+.billing_results input:focus::placeholder,
+.action_controls input:focus::placeholder {
+    color: rgb(63, 63, 63);
+}
+
+.billing_results input::placeholder,
+.action_controls input::placeholder {
+    color: rgb(173, 173, 173);
+    font-size: 11px;
+}
+
+.action_controls select,
+.billing_results select {
+    width: 160px;
+    background-color: white;
+    border: thin solid rgb(235 233 233);
+    border-radius: 8px;
+    display: inline-block;
+    font: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin: 0;
+    min-height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.action_controls select.classic,
+.billing_results select.classic {
+    background-image:
+        linear-gradient(45deg, transparent 50%, blue 50%),
+        linear-gradient(135deg, blue 50%, transparent 50%),
+        linear-gradient(to right, skyblue, skyblue);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    background-repeat: no-repeat;
+}
+
+.action_controls select.classic:focus,
+.billing_results select.classic:focus {
+    background-image:
+        linear-gradient(45deg, white 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        linear-gradient(to right, gray, gray);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+}
+
+.action_controls select.round,
+.billing_results select.round {
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        radial-gradient(#ddd 70%, transparent 72%);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - .5em) .5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1.5em 1.5em;
+    background-repeat: no-repeat;
+}
+
+.action_controls select.round:focus,
+.billing_results select.round:focus {
+    background-image:
+        linear-gradient(45deg, white 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        radial-gradient(gray 70%, transparent 72%);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - .5em) .5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1.5em 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+}
+
+.action_controls select.minimal,
+.billing_results select.minimal {
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+
+.action_controls select.minimal:focus,
+.billing_results select.minimal:focus {
+    background-image:
+        linear-gradient(45deg, green 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, green 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: rgb(233, 233, 233);
+    outline: 0;
+}
+
+.action_controls select:-moz-focusring,
+.billing_results select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+.action_controls vals,
+.billing_results vals {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.action_controls valsGoldWeight,
+.billing_results valsGoldWeight {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.vals-gold-weight suffix, .vals-Order-Price suffix, .vals-wallet-balance suffix,
+.biliing-form-list-li span suffix {
+    font-size: 10px;
+}
+
+.action_controls valsOrderPrice,
+.billing_results valsOrderPrice {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.action_controls valsFinalPrice,
+.billing_results valsFinalPrice {
+    background-color: #46d69f;
+    padding: 1px 7px 1px 5px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.action_controls valsOrderPricePayed,
+.billing_results valsOrderPricePayed {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.action_controls perfix,
+.billing_results perfix {
+    font-size: 13px;
+    margin-left: 2px;
+}
+
+perfix {
+    font-size: 13px;
+    margin-left: 2px;
+}
+
+suffix {
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+.action_controls .valsGoldPrice,
+.billing_results .valsGoldPrice {
+    color: #757575;
+    border-right: 1px solid #e7e7e7;
+    padding-right: 20.5%;
+}
+
+.action_controls .qrcode,
+.billing_results .qrcode {
+    position: relative;
+    width: 100px;
+}
+
+.action_controls .qrcode img,
+.billing_results .qrcode img {
+    width: 75px !important;
+    height: 75px !important;
+    border: 0 !important;
+    display: block;
+    outline: none !important;
+}
+
+.action_controls .qrc_placeholder,
+.billing_results .qrc_placeholder {
+    width: 75px;
+    height: 75px;
+    background-color: #ffffff;
+    display: none;
+    border: 1px solid #ebe9e9;
+    text-align: center;
+    padding-top: 25%;
+    color: #c9c4c4;
+}
+
+.action_controls .checkbox_cont,
+.billing_results .checkbox_cont {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    padding-left: 35px;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.action_controls .checkbox_cont input,
+.billing_results .checkbox_cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.action_controls .checkmark,
+.billing_results .checkmark {
+    position: absolute;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #B7C5BF;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.action_controls .checkmark:hover,
+.billing_results .checkmark:hover {
+    transition: background-color 0.3s;
+    background-color: #12373F;
+    cursor: pointer;
+}
+
+.action_controls .disabled_checkbox,
+.billing_results .disabled_checkbox {
+    pointer-events: none !important;
+    cursor: default !important;
+    background-color: #f3f2f2 !important;
+}
+
+.action_controls .disabled_text,
+.billing_results .disabled_text {
+    color: #a9a9a9 !important;
+}
+
+.action_controls .disabled_checkbox:hover,
+.billing_results .disabled_checkbox:hover {
+    background-color: #e7e7e7 !important;
+}
+
+.action_controls .checkbox_cont input:checked~.checkmark,
+.billing_results .checkbox_cont input:checked~.checkmark {
+    background-color: #12373F;
+}
+
+.action_controls .checkmark:after,
+.billing_results .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.action_controls .checkbox_cont input:checked~.checkmark:after,
+.billing_results .checkbox_cont input:checked~.checkmark:after {
+    display: block;
+}
+
+.action_controls .checkbox_cont .checkmark:after,
+.billing_results .checkbox_cont .checkmark:after {
+    right: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.action_controls .hr,
+.billing_results .hr {
+    margin: 20px 0 !important;
+    border-top: 1px solid #f1f1f1;
+    height: 1px;
+}
+
+.action_controls .hrh,
+.billing_results .hrh {
+    margin: 20px 0 35px 0 !important;
+    border-top: 1px solid #e9e9e9;
+    height: 1px;
+}
+
+.action_controls .callback_order_description,
+.billing_results .callback_order_description {
+    background-color: #f9f9f9;
+    font-size: 12px !important;
+    padding: 17px;
+    margin-top: 7px;
+    border-radius: 8px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.action_controls .payment_popup, #shop-details-modal,
+.billing_results .payment_popup {
+    display: none;
+    position: fixed;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    background-color: white;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 0 47px rgb(0 0 0 / 14%);
+}
+
+.action_controls .payment_overlay,
+.billing_results .payment_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 999;
+}
+
+
+.action_controls .close_popup,
+.billing_results .close_popup {
+    color: #DC143C !important;
+    background-color: #FBE7EB !important;
+    width: 60px;
+    text-align: center;
+}
+
+.action_controls .close_popup:hover,
+.billing_results .close_popup:hover {
+    color: #ffffff !important;
+    background-color: #DC143C !important;
+    cursor: pointer;
+}
+
+.action_controls .flex,
+.billing_results .flex {
+    display: flex;
+}
+
+.flex-shop-form-des-weight, .flex-shop-form-des-price,
+.flex-sale-form-des-weight, .flex-sale-form-des-price,
+.flex-delivery-form-des-weight, .flex-delivery-form-des-price,
+.flex-recharge-form-des-price, .flex-deposit-form-des-price {
+    display: inline-flex;
+    width: 100%;
+    align-items: baseline;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0px 12px;
+    margin-bottom: 10px;
+    will-change: opacity, transform, color;
+}
+
+.flex-shop-form-des-weight i, .flex-shop-form-des-price i,
+.flex-sale-form-des-weight i, .flex-sale-form-des-price i,
+.flex-delivery-form-des-weight i, .flex-delivery-form-des-price i,
+.flex-recharge-form-des-price i, .flex-deposit-form-des-price i {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.flex-shop-form-des-weight suffix,.flex-shop-form-des-price suffix,
+.flex-sale-form-des-weight suffix,.flex-sale-form-des-price suffix,
+.flex-delivery-form-des-weight suffix, .flex-delivery-form-des-price suffix,
+.flex-recharge-form-des-price suffix, .flex-deposit-form-des-price suffix {
+    align-self: center;
+    margin: auto;
+}
+
+.action_controls input[type="number"],.action_controls input[type="text"] {
+    display: flex;
+    border: none !important;
+    background-color: transparent;
+    z-index: 2;
+    text-align: right !important;
+}
+
+.almas-gold-shop-button, .almas-gold-sale-button,
+.almas-gold-delivery-button, .almas-gold-billing-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.almas-gold-shop-button {
+    background-color: #e6f4f1 !important;
+    color: #0D9277 !important;
+}
+
+.almas-gold-shop-button:focus-visible,
+.almas-gold-shop-button:focus,
+.almas-gold-shop-button:hover {
+    background-color: #0D9277 !important;
+    color: #fff !important;
+}
+
+.almas-gold-sale-button {
+    background-color: #fbe7eb !important;
+    color: #DC143C !important;
+}
+
+.almas-gold-sale-button:focus-visible,
+.almas-gold-sale-button:focus,
+.almas-gold-sale-button:hover {
+    background-color: #DC143C !important;
+    color: #fff !important;
+}
+
+.almas-gold-delivery-button{
+    background-color: #F0E9DD !important;
+    color: #7E623F !important;
+}
+
+.almas-gold-delivery-button:focus-visible,
+.almas-gold-delivery-button:focus,
+.almas-gold-delivery-button:hover {
+    background-color: #7E623F !important;
+    color: #fff !important;
+}
+
+.biliing-form-button-gold:focus-visible,
+.biliing-form-button-gold:focus,
+.biliing-form-button-gold:hover {
+    background-color: #7E623F !important;
+    color: #fff !important;
+}
+
+.biliing-form-button-green {
+    border: 1px solid #12373F !important;
+    background-color: #fff !important;
+    color: #12373F !important;
+}
+
+.biliing-form-button-green:focus-visible,
+.biliing-form-button-green:focus,
+.biliing-form-button-green:hover {
+    background-color: #12373F !important;
+    color: #fff !important;
+}
+
+.almas-gold-shop-info {
+    margin-top: 16px;
+    padding: 10px;
+    background-color: #12373F;
+    border-radius: 8px;
+    color: #fff !important;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.almas-gold-sale-info {
+    margin-top: 16px;
+    padding: 10px;
+    background-color: #12373F;
+    border-radius: 8px;
+    color: #fff !important;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.almas-gold-shop-info i, .almas-gold-sale-info i,
+.almas-gold-shop-button i, .almas-gold-sale-button i,
+.almas-gold-delivery-button i, .almas-gold-billing-button i {
+    font-weight: 600;
+}
+
+.flex-shop-form-des-weight-parts, .flex-shop-form-des-price-parts,
+.flex-sale-form-des-weight-parts, .flex-sale-form-des-price-parts,
+.flex-delivery-form-des-weight-parts, .flex-delivery-form-des-price-parts,
+.flex-recharge-form-des-price-parts, .flex-deposit-form-des-price-parts {
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    text-align: right;
+}
+
+.flex-shop-form-des-weight-parts-first, .flex-shop-form-des-price-parts-first,
+.flex-sale-form-des-weight-parts-first, .flex-sale-form-des-price-parts-first,
+.flex-delivery-form-des-weight-parts-first, .flex-delivery-form-des-price-parts-first,
+.flex-recharge-form-des-price-parts-first, .flex-deposit-form-des-price-parts-first {
+    display: block;
+    width: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-color: rgba(0, 0, 0, .38);
+    border-left: none;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.flex-shop-form-des-weight-parts-sec, .flex-shop-form-des-price-parts-sec,
+.flex-sale-form-des-weight-parts-sec, .flex-sale-form-des-price-parts-sec,
+.flex-delivery-form-des-weight-parts-sec, .flex-delivery-form-des-price-parts-sec,
+.flex-recharge-form-des-price-parts-sec, .flex-deposit-form-des-price-parts-sec {
+    display: block;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: calc(100% - 60px);
+    border-color: #fff;
+    box-sizing: border-box;
+    height: 100%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    pointer-events: none;
+}
+
+.flex-shop-form-des-weight-parts-third, .flex-shop-form-des-price-parts-third,
+.flex-sale-form-des-weight-parts-third, .flex-sale-form-des-price-parts-third,
+.flex-delivery-form-des-weight-parts-third, .flex-delivery-form-des-price-parts-third,
+.flex-recharge-form-des-price-parts-third, .flex-deposit-form-des-price-parts-third {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-color: #fff;
+    flex-grow: 1;
+    box-sizing: border-box;
+    height: 100%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: none;
+    pointer-events: none;
+}
+
+.flex-shop-form-des-weight-label, .flex-shop-form-des-price-label,
+.flex-sale-form-des-weight-label, .flex-sale-form-des-price-label,
+.flex-delivery-form-des-weight-label, .flex-delivery-form-des-price-label,
+.flex-recharge-form-des-price-label, .flex-deposit-form-des-price-label {
+    display: inline-block;
+    position: absolute;
+    max-width: 100%;
+    right: 37px;
+    top: 50%;
+    text-decoration: inherit;
+    -webkit-text-decoration: inherit;
+    text-transform: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: text;
+    will-change: transform;
+    -webkit-transform: translateY(-52%);
+    transform: translateY(-52%);
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+    text-align: right;
+}
+
+.flex-shop-form-des-weight-parts-focus-border .flex-shop-form-des-weight-parts-first,
+.flex-shop-form-des-price-parts-focus-border .flex-shop-form-des-price-parts-first,
+.flex-sale-form-des-weight-parts-focus-border .flex-sale-form-des-weight-parts-first,
+.flex-sale-form-des-price-parts-focus-border .flex-sale-form-des-price-parts-first,
+.flex-delivery-form-des-weight-parts-focus-border .flex-delivery-form-des-weight-parts-first,
+.flex-delivery-form-des-price-parts-focus-border .flex-delivery-form-des-price-parts-first,
+.flex-recharge-form-des-price-parts-focus-border .flex-recharge-form-des-price-parts-first,
+.flex-deposit-form-des-price-parts-focus-border .flex-deposit-form-des-price-parts-first {
+    width: 26px;
+    border-color: #12373F !important;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.flex-shop-form-des-weight-parts-focus-border .flex-shop-form-des-weight-parts-sec,
+.flex-shop-form-des-price-parts-focus-border .flex-shop-form-des-price-parts-sec,
+.flex-sale-form-des-weight-parts-focus-border .flex-sale-form-des-weight-parts-sec,
+.flex-sale-form-des-price-parts-focus-border .flex-sale-form-des-price-parts-sec,
+.flex-delivery-form-des-weight-parts-focus-border .flex-delivery-form-des-weight-parts-sec,
+.flex-delivery-form-des-price-parts-focus-border .flex-delivery-form-des-price-parts-sec,
+.flex-recharge-form-des-price-parts-focus-border .flex-recharge-form-des-price-parts-sec,
+.flex-deposit-form-des-price-parts-focus-border .flex-deposit-form-des-price-parts-sec {
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 0;
+    border-width: 2px;
+    border-color: #12373F !important;
+    border-top: none;
+    width: 4px;
+}
+
+.flex-shop-form-des-weight-parts-focus-border .flex-shop-form-des-weight-parts-third,
+.flex-shop-form-des-price-parts-focus-border .flex-shop-form-des-price-parts-third,
+.flex-sale-form-des-weight-parts-focus-border .flex-sale-form-des-weight-parts-third,
+.flex-sale-form-des-price-parts-focus-border .flex-sale-form-des-price-parts-third,
+.flex-delivery-form-des-weight-parts-focus-border .flex-delivery-form-des-weight-parts-third,
+.flex-delivery-form-des-price-parts-focus-border .flex-delivery-form-des-price-parts-third,
+.flex-recharge-form-des-price-parts-focus-border .flex-recharge-form-des-price-parts-third,
+.flex-deposit-form-des-price-parts-focus-border .flex-deposit-form-des-price-parts-third {
+    border-color: #12373F !important;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    flex-grow: 1;
+}
+
+.error .flex-shop-form-des-weight-parts-first,
+.error .flex-shop-form-des-price-parts-first,
+.error .flex-sale-form-des-weight-parts-first,
+.error .flex-sale-form-des-price-parts-first,
+.error .flex-delivery-form-des-weight-parts-first,
+.error .flex-delivery-form-des-price-parts-first,
+.error .flex-recharge-form-des-price-parts-first,
+.error .flex-deposit-form-des-price-parts-first {
+    width: 26px;
+    border-color: #DC143C !important;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.error .flex-shop-form-des-weight-parts-sec,
+.error .flex-shop-form-des-price-parts-sec,
+.error .flex-sale-form-des-weight-parts-sec,
+.error .flex-sale-form-des-price-parts-sec,
+.error .flex-delivery-form-des-weight-parts-sec,
+.error .flex-delivery-form-des-price-parts-sec,
+.error .flex-recharge-form-des-price-parts-sec,
+.error .flex-deposit-form-des-price-parts-sec {
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 0;
+    border-width: 2px;
+    border-color: #DC143C !important;
+    width: 4px;
+}
+
+.error .flex-shop-form-des-weight-parts-third,
+.error .flex-shop-form-des-price-parts-third,
+.error .flex-sale-form-des-weight-parts-third,
+.error .flex-sale-form-des-price-parts-third,
+.error .flex-delivery-form-des-weight-parts-third,
+.error .flex-delivery-form-des-price-parts-third,
+.error .flex-recharge-form-des-price-parts-third,
+.error .flex-deposit-form-des-price-parts-third {
+    border-color: #DC143C !important;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    flex-grow: 1;
+}
+
+.error i, .error suffix,.error label {
+    color: #DC143C !important;
+}
+
+.flex-shop-form-des-weight-focus i, .flex-shop-form-des-weight-focus suffix,
+.flex-shop-form-des-price-focus i, .flex-shop-form-des-price-focus suffix,
+.flex-sale-form-des-weight-focus i, .flex-sale-form-des-weight-focus suffix,
+.flex-sale-form-des-price-focus i, .flex-sale-form-des-price-focus suffix,
+.flex-delivery-form-des-weight-focus i, .flex-delivery-form-des-weight-focus suffix,
+.flex-delivery-form-des-price-focus i, .flex-delivery-form-des-price-focus suffix,
+.flex-recharge-form-des-price-focus i, .flex-recharge-form-des-price-focus suffix,
+.flex-deposit-form-des-price-focus i, .flex-deposit-form-des-price-focus suffix {
+    color: #12373F;
+}
+
+.flex-shop-form-des-weight-label-focus, .flex-shop-form-des-price-label-focus,
+.flex-sale-form-des-weight-label-focus, .flex-sale-form-des-price-label-focus,
+.flex-delivery-form-des-weight-label-focus, .flex-delivery-form-des-price-label-focus,
+.flex-recharge-form-des-price-label-focus, .flex-deposit-form-des-price-label-focus {
+    -webkit-transform: translateY(-27px) translateX(5px) scale(0.8);
+    transform: translateY(-27px) translateX(5px) scale(0.8);
+    -webkit-font-smoothing: antialiased;
+    color: #12373F;
+    will-change: transform;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.action_controls .flex-space-between,
+.billing_results .flex-space-between {
+    display: flex;
+    justify-content: space-between
+}
+
+.action_controls .flex-space-between-align-center,
+.billing_results .flex-space-between-align-center {
+    display: block;
+}
+
+.action_controls .user_avatar,
+.billing_results .user_avatar {
+    margin-left: 15px;
+    margin-top: 6px;
+    width: 20%;
+}
+
+.action_controls .user_avatar img,
+.billing_results .user_avatar img {
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 100px !important;
+    background-color: #b8b7b7;
+}
+
+.action_controls .small,
+.billing_results .small {
+    font-size: 11px;
+    font-weight: 700;
+    color: #424242
+}
+
+.action_controls .muted,
+.billing_results .muted {
+    font-size: 13px;
+    margin: 0;
+    color: #acacac;
+}
+
+.action_controls .nullwallet,
+.billing_results .nullwallet {
+    font-size: 13px;
+    margin: 0;
+    color: #acacac;
+    font-weight: normal !important;
+}
+
+.action_controls .payment_box,
+.billing_results .payment_box {
+    /*background-color: #E1D6E0;*/
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 8px;
+    align-content: center;
+    border: 1px solid #12373F;
+}
+
+.action_controls #pay_remaining_price_online_box,
+.billing_results #pay_remaining_price_online_box,
+.action_controls #pay_all_price_from_wallet_box,
+.billing_results #pay_all_price_from_wallet_box {
+    padding: 25px;
+    border-radius: 8px
+}
+
+.action_controls .ag_payment_wallet_box,
+.billing_results .ag_payment_wallet_box {
+    padding: 12px 20px 14px 20px;
+    border: 1px solid #d2daeb;
+    border-radius: 8px;
+    background-color: #fbfbfb;
+}
+
+.customer_show_details {
+    background-color: #e7e7e7 !important;
+    color: #504f4f !important;
+    border: 0 !important;
+    padding: 5px 12px !important;
+    font-size: 12px !important;
+    min-height: 30px !important;
+    cursor: pointer !important;
+    border-radius: 8px !important;
+}
+
+.customer_shop_details {
+    color: #818181 !important;
+    font-size: 12px !important;
+    padding: 3px 9px !important;
+    min-height: auto !important;
+    background-color: #ecf3f7 !important;
+}
+
+.customer_shop_details:hover {
+    color: #292929 !important;
+    background-color: #d3dee4 !important;
+    font-weight: 700 !important;
+}
+
+#loading-overlay {
+    position: fixed;
+    z-index: 9999999999999999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    /* پس‌زمینه با کمی شفافیت */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-spin, .payment-loading-spin {
+    --uib-size: 45px;
+    --uib-color: #12373f;
+    --uib-speed: 2.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    height: var(--uib-size);
+    width: var(--uib-size);
+}
+
+.slice {
+  position: relative;
+  height: calc(var(--uib-size) / 6);
+  width: 100%;
+}
+
+.slice::before,
+.slice::after {
+  --uib-a: calc(var(--uib-speed) / -2);
+  --uib-b: calc(var(--uib-speed) / -6);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(50% - var(--uib-size) / 12);
+  height: 100%;
+  width: calc(100% / 6);
+  border-radius: 50%;
+  background-color: var(--uib-color);
+  flex-shrink: 0;
+  animation: orbit var(--uib-speed) linear infinite;
+  transition: background-color 0.3s ease;
+}
+
+.slice:nth-child(1)::after {
+  animation-delay: var(--uib-a);
+}
+
+.slice:nth-child(2)::before {
+  animation-delay: var(--uib-b);
+}
+
+.slice:nth-child(2)::after {
+  animation-delay: calc(var(--uib-a) + var(--uib-b));
+}
+
+.slice:nth-child(3)::before {
+  animation-delay: calc(var(--uib-b) * 2);
+}
+.slice:nth-child(3)::after {
+  animation-delay: calc(var(--uib-a) + var(--uib-b) * 2);
+}
+
+.slice:nth-child(4)::before {
+  animation-delay: calc(var(--uib-b) * 3);
+}
+.slice:nth-child(4)::after {
+  animation-delay: calc(var(--uib-a) + var(--uib-b) * 3);
+}
+
+.slice:nth-child(5)::before {
+  animation-delay: calc(var(--uib-b) * 4);
+}
+.slice:nth-child(5)::after {
+  animation-delay: calc(var(--uib-a) + var(--uib-b) * 4);
+}
+
+.slice:nth-child(6)::before {
+  animation-delay: calc(var(--uib-b) * 5);
+}
+.slice:nth-child(6)::after {
+  animation-delay: calc(var(--uib-a) + var(--uib-b) * 5);
+}
+
+@keyframes orbit {
+  0% {
+    transform: translateX(calc(var(--uib-size) * 0.25)) scale(0.73684);
+    opacity: 0.65;
+  }
+  5% {
+    transform: translateX(calc(var(--uib-size) * 0.235)) scale(0.684208);
+    opacity: 0.58;
+  }
+  10% {
+    transform: translateX(calc(var(--uib-size) * 0.182)) scale(0.631576);
+    opacity: 0.51;
+  }
+  15% {
+    transform: translateX(calc(var(--uib-size) * 0.129)) scale(0.578944);
+    opacity: 0.44;
+  }
+  20% {
+    transform: translateX(calc(var(--uib-size) * 0.076)) scale(0.526312);
+    opacity: 0.37;
+  }
+  25% {
+    transform: translateX(0%) scale(0.47368);
+    opacity: 0.3;
+  }
+  30% {
+    transform: translateX(calc(var(--uib-size) * -0.076)) scale(0.526312);
+    opacity: 0.37;
+  }
+  35% {
+    transform: translateX(calc(var(--uib-size) * -0.129)) scale(0.578944);
+    opacity: 0.44;
+  }
+  40% {
+    transform: translateX(calc(var(--uib-size) * -0.182)) scale(0.631576);
+    opacity: 0.51;
+  }
+  45% {
+    transform: translateX(calc(var(--uib-size) * -0.235)) scale(0.684208);
+    opacity: 0.58;
+  }
+  50% {
+    transform: translateX(calc(var(--uib-size) * -0.25)) scale(0.73684);
+    opacity: 0.65;
+  }
+  55% {
+    transform: translateX(calc(var(--uib-size) * -0.235)) scale(0.789472);
+    opacity: 0.72;
+  }
+  60% {
+    transform: translateX(calc(var(--uib-size) * -0.182)) scale(0.842104);
+    opacity: 0.79;
+  }
+  65% {
+    transform: translateX(calc(var(--uib-size) * -0.129)) scale(0.894736);
+    opacity: 0.86;
+  }
+  70% {
+    transform: translateX(calc(var(--uib-size) * -0.076)) scale(0.947368);
+    opacity: 0.93;
+  }
+  75% {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(calc(var(--uib-size) * 0.076)) scale(0.947368);
+    opacity: 0.93;
+  }
+  85% {
+    transform: translateX(calc(var(--uib-size) * 0.129)) scale(0.894736);
+    opacity: 0.86;
+  }
+  90% {
+    transform: translateX(calc(var(--uib-size) * 0.182)) scale(0.842104);
+    opacity: 0.79;
+  }
+  95% {
+    transform: translateX(calc(var(--uib-size) * 0.235)) scale(0.789472);
+    opacity: 0.72;
+  }
+  100% {
+    transform: translateX(calc(var(--uib-size) * 0.25)) scale(0.73684);
+    opacity: 0.65;
+  }
+}
+
+.payment-success {
+    background-color: #e6f4f1 !important;
+    color: #0D9277 !important;
+}
+
+.payment-failed {
+    background-color: #fbe7eb !important;
+    color: #DC143C !important;
+}
+
+.payment-success, .payment-failed {
+    padding: 0 16px;
+    border-radius: 15px;
+}
+
+@font-face {
+    font-family: "uid";
+    src: url('uid.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap
+}
+
+
+.paginationix {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.paginationix a,
+.paginationix span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid rgb(212, 222, 226);
+    text-decoration: none;
+    color: #0073aa;
+    border-radius: 8px;
+    line-height: 21px;
+}
+
+.paginationix a:hover {
+    background-color: #aed1e2;
+    border: 1px solid #aed1e2;
+    color: #2c2c2c;
+}
+
+.paginationix .current {
+    background-color: #42b0e5;
+    color: #fff;
+    border-color: #42b0e5;
+    border-radius: 8px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+#payment-loading-overlay {
+    position: fixed;
+    z-index: 9999999999999999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .billing_results {
+        width: 100%;
+        margin: 15px auto;
+        border-radius: 8px;
+    }
+    .biliing-form {
+        width: 100%;
+        padding: 18px;
+    }
+    .biliing-form-pay .biliing-form-list-pay {
+        display: block;
+    }
+    .billing_results .payment_box {
+        padding: 10px !important;
+    }
+    .biliing-form-list-pay .biliing-form-list-li {
+        justify-content: space-between !important;
+        padding: 5px;
+    }
+    .biliing-form-pay .ag_pay_button {
+        width: 100%;
+        text-align: center;
+    }
+    .billing_results .ag_payment_wallet_box,
+    #pay_remaining_price_online_box .biliing-form-list-pay,
+    #pay_all_price_from_wallet_box .biliing-form-list-pay{
+        padding: 10px;
+    }
+    .biliing-form-list-type-li {
+        display: block;
+    }
+    .pay-price{
+        margin-bottom:10px;
+    }
+    .biliing-form-list-type-fee-li {
+        display: block;
+        margin-top: 4px;
+        text-align: end;
+    }
+    .callback_order_description {
+        text-align: right;
+    }
+    .action_controls {
+        width: auto;
+    }
+    .action_controls .flex-space-between-align-center {
+        display: block;
+    }
+    .flex-shop-form-des-weight, .flex-shop-form-des-price {
+        width: 100%;
+    }
+    .action_controls #shop_gold_weight, .action_controls #shop_initial_price_display,
+    .action_controls #sale_gold_weight, .action_controls #sale_initial_price_display,
+    .action_controls #delivery_gold_weight, .action_controls #delivery_initial_price_display,
+    .action_controls #deposit_amount, .action_controls #recharge_amount {
+        width: 250px !important;
+    }
+    .flex-form-des-price{
+        margin-top: 15px;
+        margin-right: 0 !important;
+    }
+    /* .flex-form-des-weight-label-focus, .flex-form-des-price-label-focus,
+    .flex-sale-form-des-weight-label-focus, .flex-sale-form-des-price-label-focus,
+    .flex-deposit-form-des-weight-label-focus, .flex-deposit-form-des-price-label-focus {
+        -webkit-transform: translateY(-25px) translateX(5px) scale(0.8);
+        transform: translateY(-25px) translateX(5px) scale(0.8);
+    } */
+    .almas-gold-shop-button, .almas-gold-sale-button, .almas-gold-delivery-button{
+        margin-top: 15px;
+        margin-right: auto !important;
+    }
+    .almas-gold-billing-button {
+        font-size: 12px;
+    }
+    .almas-gold-billing-button i {
+        font-size: 14px;
+    }
+    .billing_results .checkbox_cont {
+        font-size: 11px !important;
+    }
+    .action_controls perfix, .action_controls span {
+        font-size: 12px !important;
+        width: fit-content;
+        margin-left: 2px;
+    }
+    .almas-gold-shop-info suffix {
+        font-size: 12px;
+        width: fit-content;
+        margin-right: 0px;
+    }
+    .flex-shop-form-des-weight suffix, .flex-shop-form-des-price suffix {
+        align-self: center;
+        margin: auto;
+    }
+    .billing_results .payment_popup {
+        width: 90%;
+    }
+}

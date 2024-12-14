@@ -1,0 +1,12 @@
+[18-Jul-2024 17:08:53 UTC] PHP Warning:  Attempt to read property "safe_balance" on null in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 77
+[18-Jul-2024 17:08:53 UTC] PHP Warning:  Attempt to read property "wallet_balance" on null in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 78
+[18-Jul-2024 17:08:53 UTC] PHP Warning:  Attempt to read property "gold_weight" on null in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 82
+[18-Jul-2024 17:08:53 UTC] PHP Warning:  Attempt to read property "price_payed_online" on null in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 83
+[18-Jul-2024 17:08:53 UTC] PHP Warning:  Attempt to read property "price_payed_by_wallet" on null in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 84
+[18-Jul-2024 17:08:53 UTC] PHP Warning:  Attempt to read property "delivery_id" on null in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 85
+[18-Jul-2024 17:08:53 UTC] PHP Warning:  Attempt to read property "transaction_id" on null in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 86
+[18-Jul-2024 17:08:53 UTC] PHP Warning:  Attempt to read property "transaction_processed" on null in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 87
+[18-Jul-2024 17:08:53 UTC] PHP Warning:  Attempt to read property "authority" on null in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 113
+
+
+[18-Jul-2024 17:09:19 UTC] PHP Warning:  Undefined array key "status" in /home/nexthost/public_html/almas.gold/wp-content/plugins/almas.gold/public/view/delivery/almas-gold-delivery-gateway-callback.php on line 124
